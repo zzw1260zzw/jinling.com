@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>联系我们</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/app.css">
+  <!--引用百度地图API-->
+  <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=qjDZEntnkAVtNgmNFlOkSK3IfPvbSD97"></script>
+</head>
+
+<body>
+   <!-- 导航栏 -->
+   <header class="container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">文史金陵公益基金</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-md-end " id="navbarNavDropdown">
+          <ul class="navbar-nav ">
+            <li class="nav-item active px-3">
+              <a class="nav-link" href="./Home.html">首页 <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="./About-us.html">关于我们</a>
+            </li>
+            <li class="nav-item px-3">
+                <a class="nav-link" href="./Activity.html">活动掠影</a>
+              </li>
+            <!-- <li class="nav-item dropdown px-3">
+              <a class="nav-link dropdown-toggle" href="./Activity.html" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                活动掠影
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="./Activity.html">二十四节气小课堂</a>
+                <a class="dropdown-item" href="./Activity.html">非物质文化遗产传承</a>
+                <a class="dropdown-item" href="./Activity.html">国际文化交流合作</a>
+                <a class="dropdown-item" href="./Activity.html">爱心公益慈善活动</a>
+              </div>
+            </li> -->
+            <li class="nav-item px-3">
+              <a class="nav-link" href="./News.html">新闻资讯</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="./Content-us.html">联系我们</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  <!-- 背景 -->
+  <div class="container-fluid p-0 about-bg">
+    <img src="./img/contact-banner-bg.jpg" alt="">
+  </div>
+  <!-- 联系我们 -->
+  <div class="container-fluid mt-5">
+    <div class="container p-2">
+      <div class="main-intro text-center">
+        <h3>联系我们</h3>
+        <span>Contact Us</span>
+      </div>
+    </div>
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-12 col-lg-3 contact-detail text-center">
+          <div class="contact-detail-icon ">
+            <img src="./img/dianhua.png" alt="">
+          </div>
+          <p class="mb-2">电话</p>
+          <p>025-86906009</p>
+        </div>
+
+        <div class="col-12 col-lg-3 contact-detail text-center">
+          <div class="contact-detail-icon ">
+            <img src="./img/dizhi.png" alt="">
+          </div>
+          <p class="mb-2">地址</p>
+          <p>南京市秦淮区建邺路98号鸿信大厦4楼</p>
+        </div>
+
+        <div class="col-12 col-lg-3 contact-detail text-center">
+          <div class="contact-detail-icon ">
+            <img src="./img/qq.png" alt="">
+          </div>
+          <p class="mb-2">QQ</p>
+          <p>3593992366</p>
+        </div>
+
+        <div class="col-12 col-lg-3 contact-detail text-center">
+          <div class="contact-detail-icon ">
+            <img src="./img/youxiang.png" alt="">
+          </div>
+          <p class="mb-2">邮箱</p>
+          <p>3593992366@qq.com</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--百度地图容器-->
+  <div class="container-flu">
+    <div style="width:100%;height:550px;border:#ccc solid 1px;font-size:12px" id="map"></div>
+  </div>
+  <!-- 页脚 -->
+  <footer class="container-fluid p-0  text-center">
+    Copyright©2019 文史金陵 版权所有 <a href="http://www.beian.miit.gov.cn" target="_blank">苏ICP备xxxxxxxx号</a>
+  </footer>
+
+</body>
+<script type="text/javascript">
+  //创建和初始化地图函数：
+  function initMap() {
+    createMap();//创建地图
+    setMapEvent();//设置地图事件
+    addMapControl();//向地图添加控件
+    addMapOverlay();//向地图添加覆盖物
+  }
+  function createMap() {
+    map = new BMap.Map("map");
+    map.centerAndZoom(new BMap.Point(118.786872, 32.037267), 15);
+  }
+  function setMapEvent() {
+    map.enableScrollWheelZoom();
+    map.enableKeyboard();
+    map.enableDragging();
+    map.enableDoubleClickZoom()
+  }
+  function addClickHandler(target, window) {
+    target.addEventListener("click", function () {
+      target.openInfoWindow(window);
+    });
+  }
+  function addMapOverlay() {
+    var markers = [
+      { content: " 鸿信大厦4楼 电话: 025-86906009", title: " 南京市秦淮区建邺路98号", imageOffset: { width: -46, height: -21 }, position: { lat: 32.037512, lng: 118.786656 } }
+    ];
+    for (var index = 0; index < markers.length; index++) {
+      var point = new BMap.Point(markers[index].position.lng, markers[index].position.lat);
+      var marker = new BMap.Marker(point, {
+        icon: new BMap.Icon("http://api.map.baidu.com/lbsapi/createmap/images/icon.png", new BMap.Size(20, 25), {
+          imageOffset: new BMap.Size(markers[index].imageOffset.width, markers[index].imageOffset.height)
+        })
+      });
+      var label = new BMap.Label(markers[index].title, { offset: new BMap.Size(25, 5) });
+      var opts = {
+        width: 200,
+        title: markers[index].title,
+        enableMessage: false
+      };
+      var infoWindow = new BMap.InfoWindow(markers[index].content, opts);
+      marker.setLabel(label);
+      addClickHandler(marker, infoWindow);
+      map.addOverlay(marker);
+    };
+  }
+  //向地图添加控件
+  function addMapControl() {
+    var scaleControl = new BMap.ScaleControl({ anchor: BMAP_ANCHOR_BOTTOM_LEFT });
+    scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+    map.addControl(scaleControl);
+    var navControl = new BMap.NavigationControl({ anchor: BMAP_ANCHOR_TOP_LEFT, type: BMAP_NAVIGATION_CONTROL_LARGE });
+    map.addControl(navControl);
+    var overviewControl = new BMap.OverviewMapControl({ anchor: BMAP_ANCHOR_BOTTOM_RIGHT, isOpen: true });
+    map.addControl(overviewControl);
+  }
+  var map;
+  initMap();
+</script>
+
+</html>

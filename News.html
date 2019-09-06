@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>新闻资讯</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+   <!-- 导航栏 -->
+   <header class="container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">文史金陵公益基金</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-md-end " id="navbarNavDropdown">
+          <ul class="navbar-nav ">
+            <li class="nav-item active px-3">
+              <a class="nav-link" href="./Home.html">首页 <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="./About-us.html">关于我们</a>
+            </li>
+            <li class="nav-item px-3">
+                <a class="nav-link" href="./Activity.html">活动掠影</a>
+              </li>
+            <!-- <li class="nav-item dropdown px-3">
+              <a class="nav-link dropdown-toggle" href="./Activity.html" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                活动掠影
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="./Activity.html">二十四节气小课堂</a>
+                <a class="dropdown-item" href="./Activity.html">非物质文化遗产传承</a>
+                <a class="dropdown-item" href="./Activity.html">国际文化交流合作</a>
+                <a class="dropdown-item" href="./Activity.html">爱心公益慈善活动</a>
+              </div>
+            </li> -->
+            <li class="nav-item px-3">
+              <a class="nav-link" href="./News.html">新闻资讯</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="./Content-us.html">联系我们</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  <!-- 背景 -->
+  <div class="container-fluid p-0 about-bg">
+    <img src="./img/activity-bg.jpg" alt="">
+  </div>
+  <!-- 新闻 -->
+  <div class="container-fluid mt-5 p-0">
+    <div class="container" style="min-height: 500px;">
+      <div class="row">
+        <div class="col-3 d-none d-md-block">
+          <a class="news-item mb-3" href="">
+            <img class="p-2" src="./img/news.jpg" alt="" style="width: 269px;height: 200px;">
+            <div class="p-2">
+              <p class="news-content mt-1">《非遗在身边，我们来传承》第一期古琴赏析活动圆满结束</p>
+              <hr>
+              <p class="new-subtitle mt-1 mb-0">2019-12-09</p>
+            </div>
+          </a><a class="news-item mb-3" href="">
+            <img class="p-2" src="./img/news.jpg" alt="" style="width: 269px;height: 200px;">
+            <div class="p-2">
+              <p class="news-content mt-1">“文史金陵”艺术品慈善拍卖会暨国元证券南京营业部成立一周年活...</p>
+              <hr>
+              <p class="new-subtitle mt-1 mb-0">2019-08-20</p>
+            </div>
+          </a><a class="news-item mb-3" href="">
+            <img class="p-2" src="./img/news.jpg" alt="" style="width: 269px;height: 200px;">
+            <div class="p-2">
+              <p class="news-content mt-1">24节气诗词课堂+亲子黏土画手作</p>
+              <hr>
+              <p class="new-subtitle mt-1 mb-0">2019-04-27</p>
+            </div>
+          </a><a class="news-item mb-3" href="">
+            <img class="p-2" src="./img/news.jpg" alt="" style="width: 269px;height: 200px;">
+            <div class="p-2">
+              <p class="news-content mt-1">云锦及扎染活动回顾</p>
+              <hr>
+              <p class="new-subtitle mt-1 mb-0">2019-04-13</p>
+            </div>
+          </a> </div>
+        <div class="col-12 col-md-9 p-2">
+          <ul style="list-style: none;">
+            <content action="lists" catid="$catid" order="updatetime DESC" num="10" page="$page">
+              <li class="mb-3 p-3 rounded" style="border: 1px solid #dddddd;box-shadow: 2px 2px 2px #ddd; ">
+                <h6 class="mb-3"><a href="" style="color: #666666;">《非遗在身边，我们来传承》第一期古琴赏析活动圆满结束</a>
+                  <span class="float-right" style="font-size: 14px;color: #999;">[ 2019-12-09 ]</span>
+                </h6>
+                <hr>
+                <p><a href=""
+                    style="color: #999;font-size: 14px;">《非遗在身边，我们来传承》系列活动，以传播非物质文化遗产为载体，让更多的人认识了解非遗，喜爱上我们的传统文化。2018年12月8日，在卿云学社，我们迎来了《非遗在身边，...</a>
+                </p>
+              </li>
+              <li class="mb-3 p-3 rounded" style="border: 1px solid #dddddd;box-shadow: 2px 2px 2px #ddd; ">
+                <h6 class="mb-3"><a href="" style="color: #666666;">“文史金陵”艺术品慈善拍卖会暨国元证券南京营业部成立一周...</a>
+                  <span class="float-right" style="font-size: 14px;color: #999;">[ 2019-08-20 ]</span>
+                </h6>
+                <hr>
+                <p><a href=""
+                    style="color: #999;font-size: 14px;">8月8日，由南京市慈善总会主办，国元证券、文史金陵公益基金承办的2018年“文史金陵”艺术品慈善拍卖会暨国元证券南京营业部成立一周年活动在南京奥林匹克博物馆举行。此次...</a>
+                </p>
+              </li>
+              <li class="mb-3 p-3 rounded" style="border: 1px solid #dddddd;box-shadow: 2px 2px 2px #ddd; ">
+                <h6 class="mb-3"><a href="" style="color: #666666;">文史金陵公益基金一周年纪念</a>
+                  <span class="float-right" style="font-size: 14px;color: #999;">[ 2019-08-09 ]</span>
+                </h6>
+                <hr>
+                <p><a href="" style="color: #999;font-size: 14px;">文史金陵公益基金一周年纪念</a></p>
+              </li>
+              <li class="mb-3 p-3 rounded" style="border: 1px solid #dddddd;box-shadow: 2px 2px 2px #ddd; ">
+                <h6 class="mb-3"><a href="" style="color: #666666;">24节气诗词课堂+亲子黏土画手作</a>
+                  <span class="float-right" style="font-size: 14px;color: #999;">[ 2019-04-27 ]</span>
+                </h6>
+                <hr>
+                <p><a href="" style="color: #999;font-size: 14px;">雕琢初心，传承匠心。彩绘美好”为主题的黏土画手作活动创意来袭。智趣盎然
+                    童趣世界　　在黏土画达人老师的悉心指导下，大小朋友们玩得不亦乐乎。一揉，一搓，再一捏，原本...</a></p>
+              </li>
+              <li class="mb-3 p-3 rounded" style="border: 1px solid #dddddd;box-shadow: 2px 2px 2px #ddd; ">
+                <h6 class="mb-3"><a href="" style="color: #666666;">云锦及扎染活动回顾</a>
+                  <span class="float-right" style="font-size: 14px;color: #999;">[ 2019-04-13 ]</span>
+                </h6>
+                <hr>
+                <p><a href=""
+                    style="color: #999;font-size: 14px;">同学们通过“植物扎染”手工艺文化体验活动体验古老的纺织品染色技艺，认识与了解具有民情风俗的传统手艺，通过双手领悟中华传统扎染手工艺文化。课程一开始，讲解员就向同...</a>
+                </p>
+              </li>
+            </content>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 页脚 -->
+  <footer class="container-fluid p-0  text-center">
+      Copyright©2019 文史金陵 版权所有 <a href="http://www.beian.miit.gov.cn" target="_blank">苏ICP备xxxxxxxx号</a>
+    </footer>
+  
+</body>
+
+</html>

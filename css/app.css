@@ -1,0 +1,182 @@
+/******************* 公共样式 **********************/
+*{
+  padding: 0px;
+  margin: 0px;
+}
+/* ***标题**** */
+.main_title h3{
+  font-size: 30px;
+  line-height: 35px;
+  color: #666;
+}
+ .main_title span{
+  line-height: 35px;
+  font-size: 18px;
+  color: #999;
+}
+.main_title p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #999;
+}
+/* ***页脚**** */
+footer{
+  background-color: #000;
+  line-height: 40px;
+  color: #fff;
+}
+/******************* 首页 **********************/
+/* ***活动体系**** */
+ 
+#home_event .main-character{
+  margin-top: 30px;
+}
+#home_event .character-title {
+    margin-top: 12px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #666;
+}
+#home_event .character-content {
+    color: #666;
+    font-size: 14px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+#home_event img{
+  width: 100%;
+}
+#home_event a{
+  text-decoration: none
+}
+.main-character .row .col-md-3:hover {
+  box-shadow: 0px 0px 10px 0px #ccc;
+}
+
+/* ***组织介绍**** */
+#home_clan img{
+  width: 100%;
+}
+@media (min-width: 769px)
+{
+   .main-company1{background: url(../img/main-company-bg1.png) no-repeat;} 
+   .main-company2{background: url(../img/main-company-bg1.png) no-repeat;} 
+}
+#home_clan .main-intro-title {
+  font-size: 30px;
+  line-height: 35px;
+  color: #666666;
+}
+#home_clan .main-intro-subtitle {
+  line-height: 35px;
+  font-size: 14px;
+  color: #666;
+}
+#home_clan .plan-and-goal-content {
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+#home_clan .main-intro-content {
+  font-size: 16px;
+  line-height: 24px;
+  color: #999;
+}
+/******************* 关于我们 **********************/
+.about-bg img{
+  width: 100%;
+  height: 225px;
+}
+.about-data {
+  width: 100%;
+  margin-top: -230px;
+}
+.about-data .container {
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px 0px #ccc;
+}
+.activity-item-icon .contact-detail-icon {
+  border: 1px solid #71c0ea;
+}
+.activity-item-icon a{
+  color: #666;
+  text-decoration: none;
+}
+.contact-detail-icon {
+  width: 83px;
+  height: 83px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  margin: 20px auto;
+}
+img {
+  max-width: 100%;
+}
+.contact-detail-icon img {
+  width: 60%;
+  margin-top: 20%;
+}
+@media (min-width: 769px){
+  .plan {margin-top: 125px;}
+}
+.about-plan-pic .about-plan-item, .about-goal-item {
+  padding: 10px 15px;
+}
+.about-plan-pic .about-plan-item:hover, .about-goal-item:hover {
+  box-shadow: 0px 0px 10px 0px #eee;
+}
+.main-intro-content {
+  font-size: 14px;
+  line-height: 24px;
+  color: #999;
+}
+/******************* 活动掠影 **********************/
+@media (max-width: 768px) {
+  #activity .nav-tabs{
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+  }
+  #activity .nav-item:hover{
+    border:1px solid #eee;
+    border-radius:10px;
+    box-shadow: 0px 0px 15px 0px #eee;
+  }
+}
+#activity .news-item {
+  display: inline-block;
+  text-decoration: none !important;
+  box-shadow: 0px 0px 10px 0px #ccc !important;
+  border-radius: 1%;
+}
+.news-item .news-content {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  margin-top: 14px;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.7;
+}
+.news-item .new-subtitle {
+  font-size: 14px;
+  color: #999;
+  line-height: 24px;
+}
+/******************* 新闻资讯 **********************/
+.news-item {
+  display: inline-block;
+  text-decoration: none !important;
+  box-shadow: 0px 0px 10px 0px #ccc !important;
+  border-radius: 1%;
+}
+
